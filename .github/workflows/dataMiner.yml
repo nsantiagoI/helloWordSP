@@ -24,7 +24,6 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
-      
       - name: Skyline DataMiner Deploy Action
         uses: SkylineCommunications/Skyline-DataMiner-Deploy-Action@v1.0.11
         with:
@@ -33,5 +32,3 @@ jobs:
             artifact-name: EmpowerHelloWorld
             version: 1.0.1
             build-number: ${{ github.run_number }}
-
-
